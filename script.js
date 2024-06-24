@@ -63,4 +63,9 @@ document.getElementById('formulario').addEventListener('submit', (evento) => {
 
 });
 
-// `Homens: ${homens}, Mulheres: ${mulheres}, Criancas: ${criancas}`
+document.getElementById('limpar').addEventListener('click', () => {
+    const lista = document.getElementById('lista');
+    while (lista.firstChild) {
+        lista.removeChild(lista.firstChild);
+    }
+})
